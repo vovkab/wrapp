@@ -4,4 +4,6 @@
     <string name="app_name">Wrapp Demo App</string>
 
     <string name="facebook_app_id">322796927861974</string>
+    <string name="friends_empty">Looks like you don\'t have any friends yet!</string>
+    <string name="friends_loading">Loading Friends List...</string>
 </resources>

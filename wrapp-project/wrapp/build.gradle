@@ -9,6 +9,7 @@ apply plugin: 'android'
 
 dependencies {
     compile 'com.android.support:appcompat-v7:+'
+    compile 'de.greenrobot:eventbus:2.0.2'
     compile project (':libprojects:facebook')
 }
 
