@@ -2,4 +2,6 @@
 
 <resources>
     <string name="app_name">Wrapp Demo App</string>
+
+    <string name="facebook_app_id">322796927861974</string>
 </resources>
