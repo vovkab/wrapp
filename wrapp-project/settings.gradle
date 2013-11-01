@@ -1,1 +1,3 @@
 include ':wrapp'
+
+include ':libprojects:facebook'
