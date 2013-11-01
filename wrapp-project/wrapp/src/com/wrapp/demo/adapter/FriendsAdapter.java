@@ -61,8 +61,21 @@ public class FriendsAdapter extends BaseAdapter {
     public void setData(List<GraphUser> friends) {
         mItems.clear();
         mItems.addAll(friends);
+
+        // Sort by name
+        Collections.sort(friends, mUserComparator);
+
         notifyDataSetInvalidated();
     }
+
+    private Comparator<GraphUser> mUserComparator = new Comparator<GraphUser>() {
+        @Override
+        public int compare(GraphUser lhs, GraphUser rhs) {
+            if (lhs == null) return -1;
+            if (rhs == null) return 1;
+            return lhs.getName().compareTo(rhs.getName());
+        }
+    };
 
     private class ViewHolder {
         TextView nameView;
