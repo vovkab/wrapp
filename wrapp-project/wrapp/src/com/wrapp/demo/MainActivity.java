@@ -30,6 +30,7 @@ public class MainActivity extends FacebookActivity {
     @Override
     public void call(Session session, SessionState state, Exception exception) {
         if (DEBUG) Log.d(TAG, "Session: " + session + ", state: " + state + ", e: " + exception);
+        // ignore this results for now, we will check them in onResume
     }
 
     @Override
