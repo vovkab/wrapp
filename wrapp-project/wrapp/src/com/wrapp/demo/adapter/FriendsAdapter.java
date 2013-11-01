@@ -63,12 +63,11 @@ public class FriendsAdapter extends BaseAdapter {
     }
 
     public void setData(List<GraphUser> friends) {
-        mItems.clear();
-        mItems.addAll(friends);
-
         // Sort by name
         Collections.sort(friends, mUserComparator);
 
+        mItems.clear();
+        mItems.addAll(friends);
         notifyDataSetInvalidated();
     }
 
