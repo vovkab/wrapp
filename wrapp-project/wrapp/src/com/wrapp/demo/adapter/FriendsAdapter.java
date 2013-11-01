@@ -4,12 +4,15 @@ import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.facebook.model.GraphUser;
 import com.wrapp.demo.R;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class FriendsAdapter extends BaseAdapter {
@@ -47,6 +50,7 @@ public class FriendsAdapter extends BaseAdapter {
 
             holder = new ViewHolder();
             holder.nameView = (TextView) convertView.findViewById(R.id.name);
+            holder.pictureView = (ImageView) convertView.findViewById(R.id.picture);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
@@ -79,5 +83,6 @@ public class FriendsAdapter extends BaseAdapter {
 
     private class ViewHolder {
         TextView nameView;
+        ImageView pictureView;
     }
 }
