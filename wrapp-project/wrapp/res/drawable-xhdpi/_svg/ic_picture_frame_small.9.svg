@@ -22,12 +22,11 @@
      id="defs4">
     <filter
        inkscape:collect="always"
-       id="filter3786"
-       color-interpolation-filters="sRGB">
+       id="filter3780">
       <feGaussianBlur
          inkscape:collect="always"
-         stdDeviation="0.50074137"
-         id="feGaussianBlur3788" />
+         stdDeviation="0.62592671"
+         id="feGaussianBlur3782" />
     </filter>
   </defs>
   <sodipodi:namedview
@@ -37,9 +36,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.2"
-     inkscape:cx="8.164119"
-     inkscape:cy="9.6434872"
+     inkscape:zoom="22.4"
+     inkscape:cx="15.202623"
+     inkscape:cy="15.530959"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -49,7 +48,7 @@
      inkscape:snap-bbox-edge-midpoints="false"
      inkscape:window-width="1353"
      inkscape:window-height="938"
-     inkscape:window-x="419"
+     inkscape:window-x="201"
      inkscape:window-y="70"
      inkscape:window-maximized="0"
      inkscape:snap-bbox-midpoints="true"
@@ -78,6 +77,22 @@
        orientation="0,1"
        position="20,12"
        id="guide3820" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="31,22"
+       id="guide2996" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="34,10"
+       id="guide2998" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="10,8"
+       id="guide3000" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="22,6"
+       id="guide3002" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -87,7 +102,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -102,7 +117,7 @@
        height="25.037102"
        width="25.037035"
        id="rect3760"
-       style="opacity:0.77999998;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.96296424;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3786);enable-background:accumulate" />
+       style="opacity:0.77999998;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.96296424;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3780);enable-background:accumulate" />
     <rect
        style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#c9c6bf;stroke-width:0.99999982;stroke-miterlimit:4;stroke-opacity:0.94117647;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect2987"
@@ -126,15 +141,15 @@
        y="1020.3622" />
     <rect
        y="1051.3622"
-       x="12"
+       x="8"
        height="1"
-       width="8"
+       width="16"
        id="rect3822"
        style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <rect
-       y="1032.3622"
+       y="1028.3622"
        x="31"
-       height="8.0000172"
+       height="16.000017"
        width="1"
        id="rect3824"
        style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
