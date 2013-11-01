@@ -35,13 +35,14 @@
         android:gravity="center_vertical">
 
         <ProgressBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             />
 
         <TextView
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
+            android:padding="8dp"
             android:text="@string/friends_loading"
             />
     </LinearLayout>
