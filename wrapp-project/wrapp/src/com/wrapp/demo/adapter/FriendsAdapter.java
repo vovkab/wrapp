@@ -8,7 +8,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.facebook.model.GraphUser;
+import com.webimageloader.ext.ImageHelper;
 import com.wrapp.demo.R;
+import com.wrapp.demo.WrappApp;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -19,9 +21,17 @@ public class FriendsAdapter extends BaseAdapter {
     private ArrayList<GraphUser> mItems = new ArrayList<GraphUser>();
 
     private Context mContext;
+    private ImageHelper mImageHelper;
+    private StringBuilder mStringBuilder = new StringBuilder();
 
     public FriendsAdapter(Context context) {
         mContext = context;
+
+        // Setup Loader
+        mImageHelper = new ImageHelper(mContext, WrappApp.getLoader(mContext))
+                .setErrorResource(R.drawable.ic_no_avatar)
+                .setLoadingResource(R.drawable.ic_no_avatar)
+                .setFadeIn(true);
     }
 
     @Override
@@ -58,6 +68,14 @@ public class FriendsAdapter extends BaseAdapter {
 
         GraphUser user = getItem(position);
         holder.nameView.setText(user.getName());
+
+        // TODO: cache url or parse response manually and take image url from there
+        mStringBuilder.setLength(0);
+        mStringBuilder.append("https://graph.facebook.com/");
+        mStringBuilder.append(user.getId());
+        mStringBuilder.append("/picture");
+
+        mImageHelper.load(holder.pictureView, mStringBuilder.toString());
 
         return convertView;
     }

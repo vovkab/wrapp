@@ -10,6 +10,7 @@ apply plugin: 'android'
 dependencies {
     compile 'com.android.support:appcompat-v7:+'
     compile 'de.greenrobot:eventbus:2.0.2'
+    compile 'com.webimageloader:webimageloader:1.2.0'
     compile project (':libprojects:facebook')
 }
 

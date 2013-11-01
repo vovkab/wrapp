@@ -10,9 +10,9 @@
 
     <ImageView
         android:id="@+id/picture"
-        android:layout_height="46dp"
-        android:layout_width="46dp"
-        android:layout_margin="4dp"
+        android:layout_height="42dp"
+        android:layout_width="42dp"
+        android:layout_margin="6dp"
         android:adjustViewBounds="true"
         android:cropToPadding="true"
         android:background="@drawable/ic_picture_frame_small"
