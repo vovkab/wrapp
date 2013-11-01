@@ -75,4 +75,9 @@ public class FragmentFriends extends FragmentBase {
         }
     }
 
+    @Override
+    public int getTitleResId() {
+        return R.string.title_fragment_friends;
+    }
+
 }

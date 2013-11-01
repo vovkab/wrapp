@@ -5,7 +5,7 @@ import android.support.v4.app.Fragment;
 
 import com.wrapp.demo.MainActivity;
 
-public class FragmentBase extends Fragment {
+public abstract class FragmentBase extends Fragment {
 
     private MainActivity mMainActivity;
 
@@ -13,9 +13,16 @@ public class FragmentBase extends Fragment {
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         mMainActivity = (MainActivity) activity;
+
+        if (getTitleResId() > 0) mMainActivity.setTitle(getTitleResId());
     }
 
     public MainActivity getMainActivity() {
         return mMainActivity;
     }
+
+    public int getTitleResId() {
+        return -1;
+    }
+
 }

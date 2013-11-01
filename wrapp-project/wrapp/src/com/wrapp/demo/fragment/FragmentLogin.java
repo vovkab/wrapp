@@ -11,7 +11,7 @@ import com.facebook.widget.LoginButton;
 import com.wrapp.demo.MainActivity;
 import com.wrapp.demo.R;
 
-public class FragmentLogin extends Fragment {
+public class FragmentLogin extends FragmentBase {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -31,5 +31,10 @@ public class FragmentLogin extends Fragment {
         super.onActivityResult(requestCode, resultCode, data);
         MainActivity activity = (MainActivity) getActivity();
         activity.getUiHelper().onActivityResult(requestCode, resultCode, data);
+    }
+
+    @Override
+    public int getTitleResId() {
+        return R.string.title_fragment_login;
     }
 }
