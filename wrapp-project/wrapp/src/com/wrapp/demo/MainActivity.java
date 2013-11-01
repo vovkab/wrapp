@@ -67,4 +67,9 @@ public class MainActivity extends FacebookActivity {
         ft.replace(R.id.container, fragment);
         ft.commit();
     }
+
+    public void logout() {
+        Session.getActiveSession().closeAndClearTokenInformation();
+        showFragment(FragmentLogin.class.getName());
+    }
 }
